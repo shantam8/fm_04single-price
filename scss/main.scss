@@ -1,0 +1,117 @@
+@import "colors";
+@import "fonts";
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-color: $lightGray;
+    
+    font-family: 'Karla', sans-serif;
+    
+    
+    .card{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        width: 19.4375rem; //311px
+        margin: 4.4375rem auto 4.4375rem auto;
+        border-radius: 4px;
+        overflow: hidden;
+
+
+        .join{
+
+            background-color: white;
+            padding: 2rem 1.5625rem 2.5rem 1.5625rem;
+            .title{
+                font-size: 1.3rem;
+                color: $cyan;
+                font-weight: bold;
+            }
+            .subtitle{
+                padding-top: 1.4rem;
+                color: $brightYellow;
+                font-weight: bold;
+            }
+            p{
+                padding-top: 1.4rem;
+                color: $grayishBlue;
+            }
+        }
+
+        .sub{
+            background-color: $cyan;
+            color: white;
+            padding: 1.5rem;
+            
+            .title{
+                padding-bottom: 1.5rem;
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+            .pricetag{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+            .perMonth{
+                color: $lightGray;
+            }
+
+            .subPrice{
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+            }
+            .btn{
+                background-color: $brightYellow;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                text-align: center;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+        }
+
+        .about{
+            position: relative;
+            background-color: $cyan;
+            background-blend-mode: lighten;
+            padding: 1.75rem 1.5rem 1.75rem 1.5rem;
+            color: white;
+
+            &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            opacity: 10%;
+            }
+
+            .title{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+            ul{
+                padding-top: 0.8rem;
+                list-style: none;
+                font-size: 0.8rem;
+
+                li{
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+
+    }
+
+}

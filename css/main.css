@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: #e5eff5;
+  font-family: 'Karla', sans-serif;
+}
+
+body .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+  width: 19.4375rem;
+  margin: 4.4375rem auto 4.4375rem auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+body .card .join {
+  background-color: white;
+  padding: 2rem 1.5625rem 2.5rem 1.5625rem;
+}
+
+body .card .join .title {
+  font-size: 1.3rem;
+  color: #2ab2af;
+  font-weight: bold;
+}
+
+body .card .join .subtitle {
+  padding-top: 1.4rem;
+  color: #c0df34;
+  font-weight: bold;
+}
+
+body .card .join p {
+  padding-top: 1.4rem;
+  color: #98a6bd;
+}
+
+body .card .sub {
+  background-color: #2ab2af;
+  color: white;
+  padding: 1.5rem;
+}
+
+body .card .sub .title {
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+body .card .sub .pricetag {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+body .card .sub .perMonth {
+  color: #e5eff5;
+}
+
+body .card .sub .subPrice {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+body .card .sub .btn {
+  background-color: #c0df34;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+body .card .about {
+  position: relative;
+  background-color: #2ab2af;
+  background-blend-mode: lighten;
+  padding: 1.75rem 1.5rem 1.75rem 1.5rem;
+  color: white;
+}
+
+body .card .about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  opacity: 10%;
+}
+
+body .card .about .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+body .card .about ul {
+  padding-top: 0.8rem;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+body .card .about ul li {
+  padding-top: 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */
